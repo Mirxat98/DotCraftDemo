@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEF2E6"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/shape_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ring1"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:id="@+id/ring2"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/ring1" />
+
+        <ImageView
+            android:id="@+id/ring3"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/ring2" />
+
+        <ImageView
+            android:id="@+id/ring4"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_below="@id/ring1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:id="@+id/ring5"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_below="@id/ring2"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/ring1" />
+
+        <ImageView
+            android:id="@+id/ring6"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_below="@id/ring3"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/ring2" />
+
+        <ImageView
+            android:id="@+id/ring7"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_below="@id/ring4"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp" />
+
+        <ImageView
+            android:id="@+id/ring8"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_below="@id/ring5"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/ring1" />
+
+        <ImageView
+            android:id="@+id/ring9"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_below="@id/ring6"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/ring2" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="300dp"
+            android:layout_height="300dp">
+
+            <ImageView
+                android:id="@+id/dot1"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/shape_dot_black" />
+
+            <ImageView
+                android:id="@+id/dot2"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignTop="@+id/dot1"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/dot1"
+                android:background="@drawable/shape_dot_black" />
+
+            <ImageView
+                android:id="@+id/dot3"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignTop="@+id/dot2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="25dp"
+                android:layout_toEndOf="@+id/dot2"
+                android:background="@drawable/shape_dot_black" />
+
+            <ImageView
+                android:id="@+id/dot4"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_below="@id/dot1"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="27dp"
+                android:background="@drawable/shape_dot_black" />
+
+            <ImageView
+                android:id="@+id/dot5"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignTop="@+id/dot4"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@id/dot4"
+                android:background="@drawable/shape_dot_black" />
+
+            <ImageView
+                android:id="@+id/dot6"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_below="@id/dot3"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="27dp"
+                android:layout_toEndOf="@id/dot5"
+                android:background="@drawable/shape_dot_black" />
+
+            <ImageView
+                android:id="@+id/dot7"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_below="@id/dot4"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="31dp"
+                android:background="@drawable/shape_dot_black" />
+
+            <ImageView
+                android:id="@+id/dot8"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_below="@id/dot5"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="32dp"
+                android:layout_toEndOf="@id/dot7"
+                android:background="@drawable/shape_dot_black" />
+
+            <ImageView
+                android:id="@+id/dot9"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_below="@id/dot6"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="32dp"
+                android:layout_toEndOf="@id/dot8"
+                android:background="@drawable/shape_dot_black" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
